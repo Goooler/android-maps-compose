@@ -29,7 +29,6 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
         freeCompilerArgs += "-Xexplicit-api=strict"
-        freeCompilerArgs += "-Xopt-in=kotlin.RequiresOptIn"
     }
 }
 
