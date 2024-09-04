@@ -28,7 +28,6 @@ android {
         val stabilityConfigurationFile = layout.projectDirectory.file("compose_compiler_stability_config.conf").asFile
         freeCompilerArgs += listOf(
             "-Xexplicit-api=strict",
-            "-Xopt-in=kotlin.RequiresOptIn",
             "-P",
             "plugin:androidx.compose.compiler.plugins.kotlin:stabilityConfigurationPath=${stabilityConfigurationFile.absolutePath}"
         )
